@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://LunaWolfCorp/Clases" version="0.0.2" viewmodes="maximized">
+    <tizen:application id="aOhZST4ajS.Clases" package="aOhZST4ajS" required_version="2.2"/>
+    <author href="http://foro.toiiki.es" email="marco@lunawolf.es">BadWolf</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <tizen:metadata key="AccessoryServicesLocation" value="xml/accessoryservices.xml"/>
+    <name>Clases</name>
+    <tizen:privilege name="http://developer.samsung.com/privilege/accessoryprotocol"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>

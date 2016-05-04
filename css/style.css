@@ -1,0 +1,263 @@
+body {
+    -webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	margin: 0;
+	background-color: #080808;
+	color: #ffffff;
+	font: 14px Verdana, sans-serif;
+}
+
+#class-view header {
+	border-top: 1px solid silver;
+	margin-top: 22px;
+	margin-bottom: 4px;
+}
+#class-view header span {
+	margin: -14px auto 0 auto;
+	line-height: 28px;
+	text-align: center;
+	width: 102px;
+	display: block;
+	font-size: 13px;
+	color: white;
+	background-color: #0a0a0a;
+	border: 1px solid silver;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+li {
+	border-bottom: 1px solid silver;
+	position: relative;
+}
+li:last-child {
+	border-bottom: none;
+}
+a {
+	text-decoration: none !important;
+	color: white !important;
+}
+li > a {
+	display: block;
+	padding: 8px 16px;
+	font-size: 18px;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+li > a:active {
+	background-color: #0f0f0f;
+}
+li > a .value {
+	position: absolute;
+	right: 16px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+ul + header {
+	margin-top: 16px;
+}
+
+#class-view {
+	display: none;
+	height: 320px;
+}
+#class-view .scroll-container {
+	width: 620px;
+}
+#class-view.loading-view .scroll-container,
+#class-view.error-view .scroll-container {
+	display: none;
+}
+#class-view .scroll-view {
+	float: left;
+	width: 310px;
+}
+.scroll-view {
+	height: 320px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+
+#class-view .lesson-add-view {
+	float: left;
+	width: 309px;
+	height: 320px;
+	border-left: 1px dashed silver;
+	position: relative;
+}
+.swipe-icon {
+	position: absolute;
+	background-color: #080808;
+	top: 50%;
+	margin-top: -24px;
+	left: -24px;
+	width: 48px;
+	height: 48px;
+	border: 1px dashed silver;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+}
+.add-icon {
+	display: block;
+	width: 24px;
+	height: 48px;
+	background: url('../resources/ic_menu_add.png') no-repeat 6px center;
+}
+
+.main-line {
+	display: block;
+	line-height: 28px;
+	height: 28px;
+}
+.main-line .color-badge {
+	display: block;
+	float: left;
+	margin: 10px 4px 10px 0px;
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.summary-line {
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	font-size: 16px;
+}
+.left-content {
+	position: absolute;
+	left: 16px;
+	font-size: 22px;
+	line-height: 48px;
+	width: 48px;
+	text-align: center;
+}
+.multi-row-item li > a {
+	padding-left: 64px;
+}
+
+.button {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	line-height: 40px;
+	display: block;
+	background-color: #000000;
+	color: white !important;
+	font-size: 16px;
+	text-align: center;
+}
+.lesson-add-view .button {
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	right: 12px;
+}
+.notes-container {
+	position: absolute;
+	width: 286px;
+	background-color: #050505;
+	padding: 0 12px;
+	height: 252px;
+	overflow: auto;
+}
+.notes-container li > a {
+	line-height: initial;
+	padding: 0 16px;
+}
+.notes-container li > a span {
+	display: block;
+	padding: 16px 32px 16px 0px;
+}
+.notes-container li > a.selected span {
+	background: url('../resources/ic_check.png') no-repeat right center;	
+}
+
+#main-view,
+#class-view {
+	overflow: hidden;
+}
+#main-view header a {
+	-webkit-tap-highlight-color: black;
+}
+#main-view header {
+	position: fixed;
+	width: 100%;
+	height: 56px;
+	background-color: #000000;
+	color: white;
+	z-index: 999;
+}
+#datePulldown {
+	display: block;
+	float: left;
+	color: silver !important;
+	padding: 8px 16px 8px 16px;
+	height: 40px;
+	background: url('../resources/pulldown_spinner.png') no-repeat 100% 100%;
+}
+#datePulldown span {
+	display: block;
+}
+#datePulldown #date {
+	font-size: 14px;
+	margin-bottom: -4px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+#datePulldown #weekday {
+	font-size: 22px;
+	line-height: 26px;
+}
+#moreoverflow {
+	display: block;
+	float: right;
+	width: 56px;
+	height: 56px;
+	background: url('../resources/ic_menu_moreoverflow.png') no-repeat center center;
+}
+#main-view section {
+	padding-top: 56px;
+}
+#main-view .pager-view {
+	width: 960px;
+}
+#main-view .pager-view > div {
+	height: 264px;
+	width: 320px;
+	float: left;
+}
+.loading-view {
+}
+.error-view {
+	height: 100%;
+	background: url('../resources/ic_error.png') no-repeat center 45%;
+}
+.day-view {
+	margin: 0 8px;
+}
+
+.dialog {
+	display: none;
+	position: fixed;
+	left: 5%;
+	right: 5%;
+	background-color: black;
+	color: white;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(32, 32, 32, 0.4);
+	box-shadow: 0px 0px 7px 0px rgba(32, 32, 32, 0.4);
+}
+#datePulldown-dialog,
+#moreoverflow-dialog {
+	top: 56px;
+}
+.dialog	li > a {
+	line-height: 48px;
+}

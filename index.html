@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Clases</title>
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div id="main-view">
+		<header>
+			<a href="#" id="datePulldown">
+				<span id="date">26 AGOSTO</span>
+				<span id="weekday">Viernes</span>
+			</a>
+			<a href="#" id="moreoverflow"></a>
+		</header>
+		<section class="pager-view">
+		</section>
+	</div>
+	<div id="class-view" class="loading-view">
+		<div class="scroll-container">
+			<div class="scroll-view">
+				<div class="content">
+					<header><span>GENERAL</span></header>
+					<ul class="lessons-view"></ul>
+				
+					<header><span>NOTAS</span></header>
+					<ul class="notes-view"></ul>
+				
+					<header><span>CALIFICACIONES</span></header>
+					<ul class="marks-view multi-row-item"></ul>
+				</div>
+			</div>
+			<div class="lesson-add-view">
+				<div class="swipe-icon"><span class="add-icon"></span></div>
+				<div class="notes-container">
+					<header><span>Agregar Nota</span></header>
+					<ul class="notes-add-view">
+						<li><a href="#" class="selected"><span>Trabajo en casa</span></a></li>
+						<li><a href="#"><span>Examen</span></a></li>
+						<li><a href="#"><span>Examen oral</span></a></li>
+						<li><a href="#"><span>Leer para las clases</span></a></li>
+						<li><a href="#"><span>Traer trabajo</span></a></li>
+						<li><a href="#"><span>Repasar apuntes</span></a></li>
+						<li><a href="#"><span>Fin de proyecto</span></a></li>
+						<li><a href="#"><span>Examen de recuperación</span></a></li>
+						<li><a href="#"><span>Otra cosa</span></a></li>
+					</ul>
+				</div>
+				<a href="#" class="button">AGREGAR</a>
+			</div>
+		</div>
+	</div>
+	<div id="datePulldown-dialog" class="dialog">
+		<ul>
+			<li><a href="#" id="datePulldown-item-today">Hoy<span class="value">TUESDAY</span></a></li>
+			<li><a href="#" id="datePulldown-item-tomorrow">Mañana<span class="value">WEDNESDAY</span></a></li>
+			<li><a href="#" id="datePulldown-item-next-week">Siguiente semana<span class="value">15 JUNE</span></a></li>
+		</ul>
+	</div>
+	<div id="moreoverflow-dialog" class="dialog">
+		<ul>
+			<li><a href="#" id="moreoverflow-item-refresh">Actualizar</a></li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/dateutils.js"></script>
+<script type="text/javascript" src="js/connector.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
